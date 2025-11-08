@@ -161,7 +161,7 @@ nav {
 .pixel-corner.bl { bottom: -3px; left: -3px; }
 .pixel-corner.br { bottom: -3px; right: -3px; }
 
-/* Main Container Styling (shared between pages) */
+/* Main Container Styling (Shared Between Pages) */
 .home-main, .experience-main {
     padding: 3rem 2rem;
     display: flex;
@@ -170,7 +170,7 @@ nav {
     min-height: calc(100vh - 200px);
 }
 
-/* Shared container */
+/* Shared Container */
 .welcome-container, .experience-container {
     max-width: 900px;
     margin: 0 auto;
