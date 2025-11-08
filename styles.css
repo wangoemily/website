@@ -1,3 +1,11 @@
+/* Font Face for Brusher */
+@font-face {
+    font-family: 'Brusher';
+    src: url('Brusher-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -15,8 +23,59 @@ body {
     overflow-x: hidden;
 }
 
+/* Color Palette */
+:root {
+    --primary-pink: #fbc2eb;
+    --primary-purple: #b794c9;
+    --light-purple: #e8d5f2;
+    --pastel-blue: #a6c1ee;
+    --soft-lavender: #c8b8db;
+    --white: #ffffff;
+    --text-purple: #5a4a6f;
+}
+
+/* Typography - Headers use Brusher */
+h1, h2, h3, .intro-heading, .logo {
+    font-family: 'Brusher', 'Caveat', 'Patrick Hand', cursive;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #9b7bb5;
+    margin: 1.5rem 0;
+    text-shadow: 3px 3px 0px #e8d5f2;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #b794c9;
+    margin: 2rem 0 1rem 0;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #9b7bb5;
+    margin: 1.5rem 0 1rem 0;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+strong {
+    color: #9b7bb5;
+    font-weight: 700;
+}
+
+/* Intro Heading */
 .intro-heading {
-    font-family: 'Caveat', 'Patrick Hand', cursive;
     font-size: 2rem;
     font-weight: 700;
     color: #9b7bb5;
@@ -37,56 +96,6 @@ body {
 @keyframes gentle-pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.02); }
-}
-
-/* CUSTOMIZATION 1: Kawaii Blocky Minecraft-Inspired Typography */
-h1 {
-    font-family: 'Caveat', 'Patrick Hand', cursive;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #9b7bb5;
-    margin: 1.5rem 0;
-    text-shadow: 3px 3px 0px #e8d5f2;
-    letter-spacing: 2px;
-}
-
-h2 {
-    font-family: 'Caveat', 'Patrick Hand', cursive;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #b794c9;
-    margin: 2rem 0 1rem 0;
-    letter-spacing: 1px;
-}
-
-h3 {
-    font-family: 'Caveat', 'Patrick Hand', cursive;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #9b7bb5;
-    margin: 1.5rem 0 1rem 0;
-    letter-spacing: 1px;
-}
-
-p {
-    font-size: 1.05rem;
-    line-height: 1.8;
-}
-
-strong {
-    color: #9b7bb5;
-    font-weight: 700;
-}
-
-/* CUSTOMIZATION 2: Soft Pastel Kawaii Color Palette */
-:root {
-    --primary-pink: #fbc2eb;
-    --primary-purple: #b794c9;
-    --light-purple: #e8d5f2;
-    --pastel-blue: #a6c1ee;
-    --soft-lavender: #c8b8db;
-    --white: #ffffff;
-    --text-purple: #5a4a6f;
 }
 
 /* Sparkles Animation */
@@ -157,7 +166,7 @@ nav {
     transform: translateY(-2px);
 }
 
-/* Minecraft-Style Pixel Corners */
+/* Pixel Corners */
 .pixel-corner {
     position: absolute;
     width: 20px;
@@ -171,7 +180,7 @@ nav {
 .pixel-corner.bl { bottom: -3px; left: -3px; }
 .pixel-corner.br { bottom: -3px; right: -3px; }
 
-/* Main Container Styling (Shared Between Pages) */
+/* Main Container Styling */
 .home-main, .experience-main {
     padding: 3rem 2rem;
     display: flex;
@@ -242,7 +251,7 @@ nav {
     font-weight: 600;
 }
 
-/* About Text */
+/* About Section */
 .about-section {
     margin: 2rem 0;
 }
