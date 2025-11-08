@@ -430,3 +430,13 @@ footer p {
         height: 150px;
     }
 }
+
+/* Force Quicksand for info, contact, and buttons while keeping emojis */
+.info-box, 
+.contact-btn span, 
+.download-btn span,
+.skills-list li,
+.major, .school {
+    font-family: 'Quicksand', sans-serif;
+}
+
